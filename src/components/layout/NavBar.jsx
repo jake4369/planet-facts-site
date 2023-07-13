@@ -1,5 +1,3 @@
-import { useState, useEffect } from "react";
-
 import chevronIcon from "./../../assets/icon-chevron.svg";
 
 const menuIconColors = {
