@@ -121,7 +121,7 @@ ul.navbar__desktop-menu {
  DISPLAY
  ==================== */
 .display {
-  background: red;
+  /* background: red; */
   width: 20.4375rem;
   margin: 0 auto;
 }
