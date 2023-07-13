@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+
 import chevronIcon from "./../../assets/icon-chevron.svg";
 
 const menuIconColors = {
@@ -22,7 +24,13 @@ const activeTabColors = {
   neptune: "#2D68F0",
 };
 
-const NavBar = ({ planetData, activePlanet, setActivePlanet }) => {
+const NavBar = ({
+  planetData,
+  activePlanet,
+  setActivePlanet,
+  showMenu,
+  animationClass,
+}) => {
   // CLICK EVENT HANDLERS
   const handleMobileItemClick = (name) => {
     setActivePlanet(name);
@@ -82,7 +90,7 @@ const NavBar = ({ planetData, activePlanet, setActivePlanet }) => {
   });
 
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${animationClass}`}>
       <ul className="navbar__mobile-menu">{mobileListItems}</ul>
 
       <ul className="navbar__desktop-menu">{desktopListItems}</ul>
