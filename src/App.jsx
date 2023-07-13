@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import Header from "./components/layout/Header";
-import Display from "./components/display/Display";
+import Display from "./components/layout/Display";
 
 import planetData from "./data.json";
 
@@ -15,7 +15,7 @@ const App = () => {
         activePlanet={activePlanet}
         setActivePlanet={setActivePlanet}
       />
-      <Display />
+      <Display planetData={planetData} activePlanet={activePlanet} />
     </main>
   );
 };
