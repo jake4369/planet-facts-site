@@ -74,6 +74,7 @@ const NavBar = ({
         onClick={() => handleDesktopItemClick(planetName)}
       >
         {planetName}
+        {/* STYLE PSEUDO ELEMENTS */}
         {isActive && (
           <style>
             {`
