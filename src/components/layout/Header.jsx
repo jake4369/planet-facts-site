@@ -44,7 +44,9 @@ const Header = ({ planetData, activePlanet, setActivePlanet }) => {
         activePlanet={activePlanet}
         setActivePlanet={setActivePlanet}
         showMenu={showMenu}
+        setShowMenu={setShowMenu}
         animationClass={animationClass}
+        setAnimationClass={setAnimationClass}
       />
 
       <button

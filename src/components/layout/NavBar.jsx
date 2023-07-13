@@ -26,12 +26,15 @@ const NavBar = ({
   planetData,
   activePlanet,
   setActivePlanet,
-  showMenu,
+  setShowMenu,
   animationClass,
+  setAnimationClass,
 }) => {
   // CLICK EVENT HANDLERS
   const handleMobileItemClick = (name) => {
     setActivePlanet(name);
+    setShowMenu(false);
+    setAnimationClass("slide-out-right");
   };
 
   const handleDesktopItemClick = (name) => {
