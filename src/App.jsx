@@ -6,7 +6,7 @@ import Display from "./components/layout/Display";
 import planetData from "./data.json";
 
 const App = () => {
-  const [activePlanet, setActivePlanet] = useState("mercury");
+  const [activePlanet, setActivePlanet] = useState("Mercury");
 
   return (
     <main>
