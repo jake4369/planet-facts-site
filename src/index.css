@@ -190,42 +190,50 @@ ul.navbar__desktop-menu {
 /* ==================== 
  IMAGE SECTION
  ==================== */
-.planet-img__mercury {
+.planet-img__mercury,
+.surface-img__mercury-container {
   width: 33.9449541284%;
   margin: 5.9375rem auto 6.125rem;
 }
 
-.planet-img__venus {
+.planet-img__venus,
+.surface-img__venus-container {
   width: 47.0948012232%;
   margin: 4.625rem auto 4.75rem;
 }
 
-.planet-img__earth {
+.planet-img__earth,
+.surface-img__earth-container {
   width: 52.9051987768%;
   margin: 4rem auto 4.1875rem;
 }
 
-.planet-img__mars {
+.planet-img__mars,
+.surface-img__mars-container {
   width: 39.4495412844%;
   margin: 5.4375rem auto 5.5rem;
 }
 
-.planet-img__jupiter {
+.planet-img__jupiter,
+.surface-img__jupiter-container {
   width: 68.501529052%;
   margin: 2.4375rem auto 2.5625rem;
 }
 
-.planet-img__saturn {
+.planet-img__saturn,
+.surface-img__saturn-container {
   width: 78.2874617737%;
   margin: 1.5rem auto;
 }
 
-.planet-img__uranus {
+.planet-img__uranus,
+.surface-img__uranus-container {
   width: 53.8226299694%;
   margin: 3.9375rem auto 4.0625rem;
 }
 
-.planet-img__neptune {
+.planet-img__neptune,
+.surface-img__neptune-container {
   width: 52.9051987768%;
   margin: 4rem auto 4.1875rem;
 }
@@ -238,45 +246,6 @@ ul.navbar__desktop-menu {
 
 .surface-img__container .planet-img {
   width: 100%;
-}
-
-.surface-img__mercury-container {
-  width: 33.9449541284%;
-}
-
-.surface-img__venus-container {
-  width: 47.0948012232%;
-  margin: 4.625rem auto 4.75rem;
-}
-
-.surface-img__earth-container {
-  width: 52.9051987768%;
-  margin: 4rem auto 4.1875rem;
-}
-
-.surface-img__mars-container {
-  width: 39.4495412844%;
-  margin: 5.4375rem auto 5.5rem;
-}
-
-.surface-img__jupiter-container {
-  width: 68.501529052%;
-  margin: 2.4375rem auto 2.5625rem;
-}
-
-.surface-img__saturn-container {
-  width: 78.2874617737%;
-  margin: 1.5rem auto;
-}
-
-.surface-img__uranus-container {
-  width: 53.8226299694%;
-  margin: 3.9375rem auto 4.0625rem;
-}
-
-.surface-img__neptune-container {
-  width: 52.9051987768%;
-  margin: 4rem auto 4.1875rem;
 }
 
 .surface-img {
@@ -331,7 +300,6 @@ ul.navbar__desktop-menu {
 .info-section {
   text-align: center;
   color: #fff;
-  margin-bottom: 1.75rem;
 }
 
 h2.info-section__planet-name {
@@ -454,86 +422,55 @@ a.wiki-link {
   /* ==================== 
    IMAGE SECTION
    ==================== */
-  .planet-img__mercury {
+  .planet-img__mercury,
+  .surface-img__mercury-container {
     width: 26.7053701016%;
     margin: 9.125rem auto 8.125rem;
   }
 
-  .planet-img__venus {
+  .planet-img__venus,
+  .surface-img__venus-container {
     width: 36.7198838897%;
     margin: 7rem auto 5.9375rem;
   }
 
-  .planet-img__earth {
+  .planet-img__earth,
+  .surface-img__earth-container {
     width: 41.3642960813%;
     margin: 6rem auto 4.9375rem;
   }
 
-  .planet-img__mars {
+  .planet-img__mars,
+  .surface-img__mars-container {
     width: 30.9143686502%;
     margin: 8.25rem auto 7.1875rem;
   }
 
-  .planet-img__jupiter {
+  .planet-img__jupiter,
+  .surface-img__jupiter-container {
     width: 53.5558780842%;
     margin: 3.375rem auto 2.3125rem;
   }
 
-  .planet-img__saturn {
+  .planet-img__saturn,
+  .surface-img__saturn-container {
     width: 56.4368650218%;
     margin: 1.6875rem auto 2.7594rem;
   }
 
-  .planet-img__uranus {
+  .planet-img__uranus,
+  .surface-img__uranus-container {
     width: 42.0899854862%;
     margin: 5.8125rem auto 4.8125rem;
   }
 
-  .planet-img__neptune {
+  .planet-img__neptune,
+  .surface-img__neptune-container {
     width: 41.3642960813%;
     margin: 6rem auto 4.9375rem;
   }
 
   /* ===== SURFACE IMAGES ===== */
-  .surface-img__mercury-container {
-    width: 33.9449541284%;
-  }
-
-  .surface-img__venus-container {
-    width: 47.0948012232%;
-    margin: 4.625rem auto 4.75rem;
-  }
-
-  .surface-img__earth-container {
-    width: 52.9051987768%;
-    margin: 4rem auto 4.1875rem;
-  }
-
-  .surface-img__mars-container {
-    width: 39.4495412844%;
-    margin: 5.4375rem auto 5.5rem;
-  }
-
-  .surface-img__jupiter-container {
-    width: 68.501529052%;
-    margin: 2.4375rem auto 2.5625rem;
-  }
-
-  .surface-img__saturn-container {
-    width: 78.2874617737%;
-    margin: 1.5rem auto;
-  }
-
-  .surface-img__uranus-container {
-    width: 53.8226299694%;
-    margin: 3.9375rem auto 4.0625rem;
-  }
-
-  .surface-img__neptune-container {
-    width: 52.9051987768%;
-    margin: 4rem auto 4.1875rem;
-  }
-
   .surface-img {
     position: absolute;
     left: 50%;
@@ -677,6 +614,187 @@ a.wiki-link {
     width: 100%;
     height: 4px;
     top: 0;
+  }
+
+  /* ==================== 
+  DISPLAY
+  ==================== */
+  .display {
+    width: 77.0833333333%;
+  }
+
+  .outer-flex-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 126px auto 5.4375rem auto;
+  }
+
+  .inner-flex-container {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 31.5315315315%;
+  }
+
+  /* ==================== 
+   IMAGE SECTION
+   ==================== */
+  .image-section {
+    width: 68.4684684685%;
+  }
+
+  .planet-img__mercury,
+  .surface-img__mercury-container {
+    width: 38.1578947368%;
+    margin: 7.25rem auto;
+  }
+
+  .planet-img__venus,
+  .surface-img__venus-container {
+    width: 52.6315789474%;
+    margin: 3.8125rem auto 0;
+  }
+
+  .planet-img__earth,
+  .surface-img__earth-container {
+    width: 59.2105263158%;
+    margin: 2.25rem auto 0;
+  }
+
+  .planet-img__mars,
+  .surface-img__mars-container {
+    width: 44.2105263158%;
+    margin: 5.8125rem auto 0;
+  }
+
+  .planet-img__jupiter,
+  .surface-img__jupiter-container {
+    width: 76.5789473684%;
+    margin: -1.875rem auto 0;
+  }
+
+  .planet-img__saturn,
+  .surface-img__saturn-container {
+    width: 80.7118421053%;
+    margin: -3.4813rem auto 0;
+  }
+
+  .planet-img__uranus,
+  .surface-img__uranus-container {
+    width: 60.2631578947%;
+    margin: 2rem auto 0;
+  }
+
+  .planet-img__neptune,
+  .surface-img__neptune-container {
+    width: 59.2105263158%;
+    margin: 2.25rem auto 0;
+  }
+
+  /* ===== SURFACE IMAGES ===== */
+  .surface-img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .surface-img__mercury {
+    top: 77.9310344828%;
+    width: 56.2068965517%;
+  }
+
+  .surface-img__venus {
+    top: 70.25%;
+    width: 40.75%;
+  }
+
+  .surface-img__earth {
+    top: 68%;
+    width: 36.2222222222%;
+  }
+
+  .surface-img__mars {
+    top: 74.1071428571%;
+    width: 48.5119047619%;
+  }
+
+  .surface-img__jupiter {
+    top: 63.9175257732%;
+    width: 28.0068728522%;
+  }
+
+  .surface-img__saturn {
+    top: 64.8342870185%;
+    width: 26.5727653609%;
+  }
+
+  .surface-img__uranus {
+    top: 67.6855895197%;
+    width: 35.5895196507%;
+  }
+
+  .surface-img__neptune {
+    top: 68%;
+    width: 36.2222222222%;
+  }
+
+  /* ==================== 
+  INFO SECTION
+  ==================== */
+  .info-section {
+    width: 100%;
+    margin-bottom: 3.1875rem;
+  }
+
+  h2.info-section__planet-name {
+    font-size: 5rem;
+    margin-bottom: 1.4375rem;
+  }
+
+  p.info-section__planet-info {
+    font-size: 0.875rem;
+    line-height: 1.5625rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .wiki-link__container {
+    font-size: 0.875rem;
+    line-height: 1.5625rem;
+  }
+
+  a.wiki-link {
+    transition: all 0.3s ease-in-out;
+  }
+
+  a.wiki-link:hover {
+    opacity: 1;
+  }
+
+  .wiki-link__source-icon {
+    margin-left: 0.5rem;
+  }
+
+  /* ==================== 
+  DESKTOP TAB SECTION
+  ==================== */
+  .desktop-info__tab-section {
+    width: 100%;
+  }
+
+  .desktop-tab-btn {
+    font-size: 0.75rem;
+    line-height: 1.5625rem;
+    letter-spacing: 2.571px;
+    padding: 0.75rem 0 0.6875rem 1.75rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .desktop-tab-btn:hover {
+    background-color: rgb(216, 216, 216, 0.2);
+  }
+
+  .desktop-tab-btn__number {
+    margin-right: 1.75rem;
   }
 }
 
