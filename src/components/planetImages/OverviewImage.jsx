@@ -24,7 +24,7 @@ const OverviewImage = ({ activePlanet }) => {
     <img
       src={imageSrc}
       alt=""
-      className={`planet-img planet-img__${activePlanet.toLowerCase()}`}
+      className={`planet-img overview-img planet-img__${activePlanet.toLowerCase()}`}
     />
   );
 };
