@@ -1,13 +1,7 @@
-import { useEffect, useState } from "react";
-
-import TabBtn from "./TabBtn";
+import MobileTabBtn from "./MobileTabBtn";
 
 const MobileInfoTabs = ({ activePlanet, activeTab, setActiveTab }) => {
   const tabNames = ["overview", "structure", "surface"];
-
-  useEffect(() => {
-    setActiveTab(0);
-  }, [activePlanet]);
 
   const tabBtns = tabNames.map((tabName, index) => {
     const isActive = activeTab === index;
@@ -17,14 +11,14 @@ const MobileInfoTabs = ({ activePlanet, activeTab, setActiveTab }) => {
     };
 
     return (
-      <TabBtn
+      <MobileTabBtn
         key={tabName}
         handleClick={handleClick}
         activePlanet={activePlanet}
         activeClass={isActive ? "active" : ""}
       >
         {tabName}
-      </TabBtn>
+      </MobileTabBtn>
     );
   });
   return <section className="mobile-info__tab-section">{tabBtns}</section>;
