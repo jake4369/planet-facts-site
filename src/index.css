@@ -130,10 +130,11 @@ ul.navbar__desktop-menu {
 .display {
   display: flex;
   flex-direction: column;
-  background: red;
+  /* background: red; */
   width: 87.2%;
+  max-width: 23.4375rem;
   align-items: center;
-  margin: 0 auto;
+  margin: 0 auto 2.9375rem auto;
 }
 
 /* ==================== 
@@ -149,7 +150,7 @@ ul.navbar__desktop-menu {
   justify-content: space-between;
   padding: 1.25rem 0;
   border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.2);
-  max-width: 25rem;
+  width: 100%;
 }
 
 .mobile-tab-btn {
@@ -343,6 +344,44 @@ a.wiki-link {
   margin-left: 0.25rem;
 }
 
+/* ==================== 
+ STAT SECTION
+ ==================== */
+.stat-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.stat-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  text-transform: uppercase;
+  border: 0.0625rem solid rgba(255, 255, 255, 0.2);
+  padding: 0.5625rem 7.33944954128% 0.8125rem;
+}
+
+.stat-title {
+  font-family: "Spartan Bold", Arial, Helvetica, sans-serif;
+  font-size: 0.5rem;
+  font-weight: 700;
+  line-height: 1rem;
+  letter-spacing: 0.727px;
+  opacity: 0.5;
+  margin-top: 0.4375rem;
+}
+
+.stat-data {
+  text-align: right;
+  font-family: "Antonio", Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: -0.75px;
+}
+
 /* ============================================================ 
  MEDIA QUERIES
  ============================================================ */
@@ -388,6 +427,8 @@ a.wiki-link {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 48rem;
+    margin: 0 auto;
   }
 
   .desktop-list-item {
@@ -409,6 +450,7 @@ a.wiki-link {
   ==================== */
   .display {
     width: 89.7135416667%;
+    max-width: 48rem;
   }
 
   .mobile-info__tab-section {
@@ -564,6 +606,33 @@ a.wiki-link {
     margin-right: 1.0625rem;
     opacity: 0.5;
   }
+
+  /* ==================== 
+  STAT SECTION
+  ==================== */
+  .stat-section {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.59651669086%;
+  }
+
+  .stat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 0 1.1875rem 0.9375rem;
+    width: 23.8026124819%;
+  }
+
+  .stat-title {
+    margin: 0 0 0.375rem;
+  }
+
+  .stat-data {
+    text-align: left;
+    font-size: 1.55rem;
+    letter-spacing: -0.9px;
+  }
 }
 
 /* ===== DESKTOP ===== */
@@ -579,7 +648,7 @@ a.wiki-link {
   }
 
   .header h1 {
-    padding-top: 12px;
+    padding-top: 0.75rem;
     margin-bottom: 0;
   }
 
@@ -621,6 +690,7 @@ a.wiki-link {
   ==================== */
   .display {
     width: 77.0833333333%;
+    max-width: 69.375rem;
   }
 
   .outer-flex-container {
@@ -795,6 +865,30 @@ a.wiki-link {
 
   .desktop-tab-btn__number {
     margin-right: 1.75rem;
+  }
+
+  /* ==================== 
+  STAT SECTION
+  ==================== */
+  .stat-section {
+    gap: 0.99099099099%;
+  }
+
+  .stat-container {
+    padding: 1.25rem 0 1.6875rem 1.4375rem;
+    width: 22.972972973%;
+  }
+
+  .stat-title {
+    font-size: 0.6875rem;
+    line-height: 1.5625rem;
+    letter-spacing: 1px;
+    margin: 0 0 0.25rem;
+  }
+
+  .stat-data {
+    font-size: 2.5rem;
+    letter-spacing: -1.5px;
   }
 }
 
