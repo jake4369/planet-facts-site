@@ -17,6 +17,7 @@ const DesktopInfoTabs = ({ activePlanet, activeTab, setActiveTab }) => {
         activePlanet={activePlanet}
         activeClass={isActive ? "active" : ""}
       >
+        <span className="desktop-tab-btn__number">0{index + 1}</span>
         {tabName}
       </DesktopTabBtn>
     );
