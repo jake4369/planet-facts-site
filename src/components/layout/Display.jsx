@@ -4,6 +4,7 @@ import MobileInfoTabs from "../tabs/MobileInfoTabs";
 import ImageSection from "../planetImages/ImageSection";
 import InfoSection from "../info/InfoSection";
 import DesktopInfoTabs from "../tabs/DesktopInfoTabs";
+import StatSection from "../stats/StatSection";
 
 const Display = ({ planetData, activePlanet }) => {
   const [activeTab, setActiveTab] = useState(0);
@@ -36,6 +37,8 @@ const Display = ({ planetData, activePlanet }) => {
           />
         </div>
       </div>
+
+      <StatSection planetData={planetData} activePlanet={activePlanet} />
     </div>
   );
 };
