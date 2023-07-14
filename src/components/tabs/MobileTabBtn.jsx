@@ -10,13 +10,14 @@ const rectangleColors = {
 };
 
 const MobileTabBtn = ({ children, activePlanet, activeClass, handleClick }) => {
+  console.log(rectangleColors[activePlanet]);
   return (
     <button className={`mobile-tab-btn ${activeClass}`} onClick={handleClick}>
       {children}
       {activeClass === "active" && (
         <style>
           {`
-            .tab-btn.active::after {
+            .mobile-tab-btn.active::after {
               background: ${rectangleColors[activePlanet]};
             }
           `}
