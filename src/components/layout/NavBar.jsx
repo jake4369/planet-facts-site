@@ -1,25 +1,25 @@
 import chevronIcon from "./../../assets/icon-chevron.svg";
 
 const menuIconColors = {
-  mercury: "#DEF4FC",
-  venus: "#F7CC7F",
-  earth: "#545BFE",
-  mars: "#FF6A45",
-  jupiter: "#ECAD7A",
-  saturn: "#FCCB6B",
-  uranus: "#65F0D5",
-  neptune: "#497EFA",
+  Mercury: "#DEF4FC",
+  Venus: "#F7CC7F",
+  Earth: "#545BFE",
+  Mars: "#FF6A45",
+  Jupiter: "#ECAD7A",
+  Saturn: "#FCCB6B",
+  Uranus: "#65F0D5",
+  Neptune: "#497EFA",
 };
 
 const activeTabColors = {
-  mercury: "#419EBB",
-  venus: "#EDA249",
-  earth: "#6D2ED5",
-  mars: "#D14C32",
-  jupiter: "#D83A34",
-  saturn: "#CD5120",
-  uranus: "#1EC1A2",
-  neptune: "#2D68F0",
+  Mercury: "#419EBB",
+  Venus: "#EDA249",
+  Earth: "#6D2ED5",
+  Mars: "#D14C32",
+  Jupiter: "#D83A34",
+  Saturn: "#CD5120",
+  Uranus: "#1EC1A2",
+  Neptune: "#2D68F0",
 };
 
 const NavBar = ({
@@ -43,7 +43,7 @@ const NavBar = ({
 
   // MOBILE MENU LIST ITEMS
   const mobileListItems = planetData.map((planet) => {
-    const planetName = planet.name.toLowerCase();
+    const planetName = planet.name;
     return (
       <li
         key={planetName}
@@ -65,7 +65,7 @@ const NavBar = ({
 
   // DESKTOP MENU LIST ITEMS
   const desktopListItems = planetData.map((planet) => {
-    const planetName = planet.name.toLowerCase();
+    const planetName = planet.name;
     const isActive = planetName === activePlanet;
 
     return (
