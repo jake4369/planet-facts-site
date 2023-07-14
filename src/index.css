@@ -69,8 +69,8 @@ body {
 
 .menu-btn {
   display: block;
-  width: 24px;
-  height: 17px;
+  width: 1.5rem;
+  height: 1.0625rem;
   border: none;
   outline: none;
   background-color: transparent;
@@ -114,8 +114,8 @@ ul.navbar__desktop-menu {
 }
 
 .mobile-list-item__icon {
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   border-radius: 100%;
   margin-right: 1.5625rem;
 }
@@ -178,7 +178,7 @@ ul.navbar__desktop-menu {
   content: "";
   width: 100%;
   height: 0.25rem;
-  top: 27px;
+  top: 1.6875rem;
   left: 0;
 }
 
@@ -190,6 +190,12 @@ ul.navbar__desktop-menu {
 /* ==================== 
  IMAGE SECTION
  ==================== */
+.image-section {
+  height: fit-content;
+  min-height: 12.5rem;
+  max-height: 18.75rem;
+}
+
 .planet-img__mercury,
 .surface-img__mercury-container {
   width: 33.9449541284%;
@@ -463,6 +469,12 @@ a.wiki-link {
   /* ==================== 
    IMAGE SECTION
    ==================== */
+  .image-section {
+    height: fit-content;
+    min-height: 12.5rem;
+    max-height: 28.125rem;
+  }
+
   .planet-img__mercury,
   .surface-img__mercury-container {
     width: 26.7053701016%;
@@ -680,7 +692,7 @@ a.wiki-link {
     position: absolute;
     content: "";
     width: 100%;
-    height: 4px;
+    height: 0.25rem;
     top: 0;
   }
 
@@ -695,7 +707,7 @@ a.wiki-link {
   .outer-flex-container {
     display: flex;
     justify-content: space-between;
-    margin: 126px auto 5.4375rem auto;
+    margin: 7.875rem auto 5.4375rem auto;
   }
 
   .inner-flex-container {
@@ -709,6 +721,13 @@ a.wiki-link {
    ==================== */
   .image-section {
     width: 68.4684684685%;
+    min-height: unset;
+    max-height: unset;
+  }
+
+  .overview-img:hover {
+    -webkit-animation: rotate-center 5s ease-in-out both;
+    animation: rotate-center 5s ease-in-out both;
   }
 
   .planet-img__mercury,
@@ -953,5 +972,26 @@ a.wiki-link {
     -webkit-transform: translateX(1000px);
     transform: translateX(1000px);
     opacity: 0;
+  }
+}
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
