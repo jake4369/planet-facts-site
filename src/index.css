@@ -130,7 +130,6 @@ ul.navbar__desktop-menu {
 .display {
   display: flex;
   flex-direction: column;
-  /* background: red; */
   width: 87.2%;
   max-width: 23.4375rem;
   align-items: center;
