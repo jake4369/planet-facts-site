@@ -15,7 +15,8 @@ const DesktopTabBtn = ({
   activeClass,
   handleClick,
 }) => {
-  const planetName = activePlanet.name;
+  const planetName = activePlanet.toLowerCase();
+  console.log(activePlanet);
   return (
     <button
       className={`desktop-tab-btn ${activeClass}`}
